@@ -1,0 +1,26 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="micGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f9fff" />
+      <stop offset="100%" stop-color="#2bb283" />
+    </linearGradient>
+  </defs>
+
+  <!-- Corpo do microfone -->
+  <rect x="37" y="10" width="26" height="42" rx="13" fill="url(#micGradient)" />
+
+  <!-- Suporte em U -->
+  <path
+    d="M 25 44 A 25 25 0 0 0 75 44"
+    fill="none"
+    stroke="url(#micGradient)"
+    stroke-width="7"
+    stroke-linecap="round"
+  />
+
+  <!-- Haste -->
+  <line x1="50" y1="69" x2="50" y2="82" stroke="url(#micGradient)" stroke-width="7" stroke-linecap="round" />
+
+  <!-- Base -->
+  <line x1="34" y1="88" x2="66" y2="88" stroke="url(#micGradient)" stroke-width="7" stroke-linecap="round" />
+</svg>

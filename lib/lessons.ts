@@ -1,0 +1,165 @@
+import { Lesson } from "./types";
+
+export const lessons: Lesson[] = [
+  {
+    id: "greetings",
+    day: 1,
+    title: "Saudações",
+    titleEn: "Greetings",
+    theme: "Saudações",
+    vocabulary: [
+      { en: "Hello", pt: "Olá", icon: "hand" },
+      { en: "Good morning", pt: "Bom dia", icon: "sunrise" },
+      { en: "Good afternoon", pt: "Boa tarde", icon: "sun" },
+      { en: "Good evening", pt: "Boa noite (ao chegar)", icon: "sunset" },
+      { en: "How are you?", pt: "Como você está?", icon: "help" },
+      { en: "Nice to meet you", pt: "Prazer em conhecê-lo(a)", icon: "handshake" },
+    ],
+    phrases: [
+      { id: "g1", en: "Hello, how are you?", pt: "Olá, como você está?" },
+      { id: "g2", en: "I'm fine, thank you. And you?", pt: "Estou bem, obrigado(a). E você?" },
+      { id: "g3", en: "Nice to meet you!", pt: "Prazer em te conhecer!" },
+      { id: "g4", en: "See you later.", pt: "Até mais tarde." },
+    ],
+    fillBlanks: [
+      { id: "gb1", sentence: "Hello, how {blank} you?", answer: "are", pt: "Olá, como você está?" },
+      { id: "gb2", sentence: "Nice to {blank} you!", answer: "meet", pt: "Prazer em te conhecer!" },
+      { id: "gb3", sentence: "See you {blank}.", answer: "later", pt: "Até mais tarde." },
+    ],
+    exercisePrompt: "Cumprimente alguém e pergunte como a pessoa está.",
+  },
+  {
+    id: "introductions",
+    day: 2,
+    title: "Apresentação Pessoal",
+    titleEn: "Introductions",
+    theme: "Apresentação",
+    vocabulary: [
+      { en: "My name is...", pt: "Meu nome é...", icon: "idcard" },
+      { en: "I am from...", pt: "Eu sou de...", icon: "mappin" },
+      { en: "I am ... years old", pt: "Eu tenho ... anos", icon: "cake" },
+      { en: "I work as a...", pt: "Eu trabalho como...", icon: "briefcase" },
+      { en: "What do you do?", pt: "O que você faz?", icon: "help" },
+    ],
+    phrases: [
+      { id: "i1", en: "My name is Ana. What's your name?", pt: "Meu nome é Ana. Qual é o seu nome?" },
+      { id: "i2", en: "I am from Brazil.", pt: "Eu sou do Brasil." },
+      { id: "i3", en: "I work as a designer.", pt: "Eu trabalho como designer." },
+      { id: "i4", en: "It's a pleasure to meet you.", pt: "É um prazer te conhecer." },
+    ],
+    fillBlanks: [
+      { id: "ib1", sentence: "My name {blank} Ana.", answer: "is", pt: "Meu nome é Ana." },
+      { id: "ib2", sentence: "I am {blank} Brazil.", answer: "from", pt: "Eu sou do Brasil." },
+      { id: "ib3", sentence: "I work as a {blank}.", answer: "designer", pt: "Eu trabalho como designer." },
+    ],
+    exercisePrompt: "Apresente-se dizendo seu nome, de onde você é e sua profissão.",
+  },
+  {
+    id: "food",
+    day: 3,
+    title: "Comida",
+    titleEn: "Food",
+    theme: "Comida",
+    vocabulary: [
+      { en: "I would like...", pt: "Eu gostaria de...", icon: "hand" },
+      { en: "The bill, please", pt: "A conta, por favor", icon: "receipt" },
+      { en: "It's delicious", pt: "Está delicioso", icon: "star" },
+      { en: "I'm hungry", pt: "Estou com fome", icon: "hungry" },
+      { en: "Can I have the menu?", pt: "Posso ver o cardápio?", icon: "menu" },
+    ],
+    phrases: [
+      { id: "f1", en: "Can I have the menu, please?", pt: "Posso ver o cardápio, por favor?" },
+      { id: "f2", en: "I would like a coffee and a sandwich.", pt: "Eu gostaria de um café e um sanduíche." },
+      { id: "f3", en: "It's delicious, thank you!", pt: "Está delicioso, obrigado(a)!" },
+      { id: "f4", en: "The bill, please.", pt: "A conta, por favor." },
+    ],
+    fillBlanks: [
+      { id: "fb1", sentence: "Can I have the {blank}, please?", answer: "menu", pt: "Posso ver o cardápio, por favor?" },
+      { id: "fb2", sentence: "I would {blank} a coffee and a sandwich.", answer: "like", pt: "Eu gostaria de um café e um sanduíche." },
+      { id: "fb3", sentence: "The {blank}, please.", answer: "bill", pt: "A conta, por favor." },
+    ],
+    exercisePrompt: "Peça um prato em um restaurante e agradeça pela refeição.",
+  },
+  {
+    id: "travel",
+    day: 4,
+    title: "Viagem",
+    titleEn: "Travel",
+    theme: "Viagem",
+    vocabulary: [
+      { en: "Where is...?", pt: "Onde fica...?", icon: "mappin" },
+      { en: "How much is the ticket?", pt: "Quanto custa a passagem?", icon: "ticket" },
+      { en: "I'm lost", pt: "Estou perdido(a)", icon: "compass" },
+      { en: "Turn left / right", pt: "Vire à esquerda / direita", icon: "turn" },
+      { en: "Airport / Hotel", pt: "Aeroporto / Hotel", icon: "plane" },
+    ],
+    phrases: [
+      { id: "t1", en: "Where is the nearest hotel?", pt: "Onde fica o hotel mais próximo?" },
+      { id: "t2", en: "How much is the ticket to the airport?", pt: "Quanto custa a passagem para o aeroporto?" },
+      { id: "t3", en: "I'm lost, can you help me?", pt: "Estou perdido(a), você pode me ajudar?" },
+      { id: "t4", en: "Turn left at the next street.", pt: "Vire à esquerda na próxima rua." },
+    ],
+    fillBlanks: [
+      { id: "tb1", sentence: "Where is the nearest {blank}?", answer: "hotel", pt: "Onde fica o hotel mais próximo?" },
+      { id: "tb2", sentence: "I'm {blank}, can you help me?", answer: "lost", pt: "Estou perdido(a), você pode me ajudar?" },
+      { id: "tb3", sentence: "Turn {blank} at the next street.", answer: "left", pt: "Vire à esquerda na próxima rua." },
+    ],
+    exercisePrompt: "Pergunte como chegar a um lugar e peça ajuda educadamente.",
+  },
+  {
+    id: "shopping",
+    day: 5,
+    title: "Compras",
+    titleEn: "Shopping",
+    theme: "Compras",
+    vocabulary: [
+      { en: "How much does it cost?", pt: "Quanto custa?", icon: "tag" },
+      { en: "Do you have this in another size?", pt: "Você tem isso em outro tamanho?", icon: "ruler" },
+      { en: "I'm just looking, thanks", pt: "Estou só olhando, obrigado(a)", icon: "eye" },
+      { en: "Can I try it on?", pt: "Posso experimentar?", icon: "shirt" },
+      { en: "I'll take it", pt: "Vou levar", icon: "bag" },
+    ],
+    phrases: [
+      { id: "s1", en: "How much does this shirt cost?", pt: "Quanto custa essa camisa?" },
+      { id: "s2", en: "Do you have this in a bigger size?", pt: "Você tem isso em um tamanho maior?" },
+      { id: "s3", en: "Can I try it on?", pt: "Posso experimentar?" },
+      { id: "s4", en: "I'll take it, thank you.", pt: "Vou levar, obrigado(a)." },
+    ],
+    fillBlanks: [
+      { id: "sb1", sentence: "How much does this shirt {blank}?", answer: "cost", pt: "Quanto custa essa camisa?" },
+      { id: "sb2", sentence: "Can I {blank} it on?", answer: "try", pt: "Posso experimentar?" },
+      { id: "sb3", sentence: "I'll {blank} it, thank you.", answer: "take", pt: "Vou levar, obrigado(a)." },
+    ],
+    exercisePrompt: "Pergunte o preço de um produto e diga que vai levá-lo.",
+  },
+  {
+    id: "smalltalk",
+    day: 6,
+    title: "Conversa Casual",
+    titleEn: "Small Talk",
+    theme: "Conversa Casual",
+    vocabulary: [
+      { en: "What's up?", pt: "E aí, tudo bem?", icon: "chat" },
+      { en: "I love this weather", pt: "Eu adoro esse clima", icon: "weather" },
+      { en: "That sounds great", pt: "Isso parece ótimo", icon: "thumbsup" },
+      { en: "Tell me more", pt: "Me conta mais", icon: "ear" },
+      { en: "I totally agree", pt: "Eu concordo totalmente", icon: "agree" },
+    ],
+    phrases: [
+      { id: "sm1", en: "What's up? How was your week?", pt: "E aí, como foi sua semana?" },
+      { id: "sm2", en: "That sounds great, tell me more!", pt: "Isso parece ótimo, me conta mais!" },
+      { id: "sm3", en: "I totally agree with you.", pt: "Eu concordo totalmente com você." },
+      { id: "sm4", en: "I love this weather today.", pt: "Eu adoro esse clima hoje." },
+    ],
+    fillBlanks: [
+      { id: "smb1", sentence: "What's up? How was your {blank}?", answer: "week", pt: "E aí, como foi sua semana?" },
+      { id: "smb2", sentence: "That sounds great, tell me {blank}!", answer: "more", pt: "Isso parece ótimo, me conta mais!" },
+      { id: "smb3", sentence: "I totally {blank} with you.", answer: "agree", pt: "Eu concordo totalmente com você." },
+    ],
+    exercisePrompt: "Comente sobre o clima e pergunte como foi a semana da outra pessoa.",
+  },
+];
+
+export function getLessonById(id: string): Lesson | undefined {
+  return lessons.find((l) => l.id === id);
+}
